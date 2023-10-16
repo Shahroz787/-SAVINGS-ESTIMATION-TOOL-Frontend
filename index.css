@@ -1,0 +1,81 @@
+/* Style for container */
+body{
+    background-color: aquamarine;
+
+}
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Style for headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px; /* Increase the font size */
+    margin-bottom: 5px;
+    text-align: left; /* Align the labels to the left */
+}
+
+/* Style for input fields */
+input {
+    width: 96%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for the button */
+button {
+    width: 30%;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(215, 207, 207);
+}
+
+button:hover {
+    background-color: #fdd406;
+}
+
+/* Add this style for the pressed state */
+button:active {
+    background-color: #ff9900;
+    transform: translateY(2px); /* Add a small vertical shift */
+}
+
+
+/* Style for updated balance */
+/* #updatedBalance {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+} */
+
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: none; /* Initially hide the notification */
+}

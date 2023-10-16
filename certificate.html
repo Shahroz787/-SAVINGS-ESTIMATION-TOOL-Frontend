@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Management</title>
+    <link rel="stylesheet" type="text/css" href="certificate.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1><u>Certificate Management</u></h1>
+        <div id="certificateList">
+            <!-- Certificate data will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Edit Certificate Form -->
+    <div class="overlay" id="editOverlay" style="display: none;">
+        <div class="overlay-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <h2>Edit Certificate</h2>
+            <div class="form">
+                <input type="hidden" id="editCertificateID">
+
+                <label for="editCertificateAmount">Certificate Amount (₹):</label>
+                <input type="number" id="editCertificateAmount" placeholder="Enter certificate amount"><br><br>
+
+                <label for="editInterestRate">Interest Rate (%):</label>
+                <input type="number" id="editInterestRate" placeholder="Enter interest rate"><br><br>
+
+                <label for="editPurchaseDate">Purchase Date:</label>
+                <input type="date" id="editPurchaseDate"><br><br>
+
+                <button type="button" onclick="submitEditedCertificate()">Save</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="certificate.js"></script>
+
+</body>
+
+</html>

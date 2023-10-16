@@ -1,0 +1,125 @@
+.container {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.certificate-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 5px 10px;
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #fdd406;
+}
+
+.edit-button:active,
+.delete-button:active {
+    background-color: #ff9900;
+    /* Change color when clicked */
+    transform: translateY(2px);
+    /* Add a small vertical shift */
+}
+
+
+/* Style for the notification */
+#notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: none;
+}
+
+/* Style for the overlay container */
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent black overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the modal content */
+.overlay-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.overlay-content h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    /* Margin below the heading */
+}
+
+.overlay-content button[type="button"] {
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.overlay-content button[type="button"]:hover {
+    background-color: #fdd406;
+}
+
+.overlay-content button[type="button"]:active {
+    background-color: #ff9900;
+    /* Change color when clicked */
+    transform: translateY(2px);
+    /* Add a small vertical shift */
+}
+
+/* Style for the "Close" button */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style for the close button on hover */
+.close:hover {
+    color: #f00;
+}
